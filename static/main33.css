@@ -1,0 +1,110 @@
+/* main33.css */
+
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #0077b6;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header .a111 a {
+    color: #fff;
+    background-color: #023e8a;
+    padding: 10px 20px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+}
+
+header .a111 a:hover {
+    background-color: #005082;
+}
+
+/* Main content container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    color: #0077b6;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+/* Vacancy listings */
+.ssss {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    background-color: #f9f9f9;
+}
+
+.ssss tr {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.ssss tr:hover {
+    transform: translateY(-5px);
+}
+
+.ssss h3 {
+    color: #333;
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+
+.ssss h3:first-child {
+    font-weight: bold;
+}
+
+.ssss a {
+    display: inline-block;
+    color: #fff;
+    background-color: #0077b6;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.ssss a:hover {
+    background-color: #005082;
+}

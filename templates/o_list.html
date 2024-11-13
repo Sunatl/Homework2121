@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'index2.css' %}">
+</head>
+<body>
+
+    <div class="a1">
+        <h1>Book</h1>
+        <div class="base">
+        <a href="{% url 'base' %}"><h3 class="sas">Home</h3></a>
+        <a href="{% url 'o_cr' %}"><h3 class="sas">Add</h3></a>
+    </div>
+    </div>
+
+
+<div class="b1">
+        <table>
+            <caption> <h3>Book</h1> </caption>
+            <tr>
+                <th>title</th>
+                <th>author</th>
+                <th>description</th>
+                <th>published_date</th>
+                <th>Detail</th>
+
+            </tr>
+        {% for category in object_list %}
+        <tr>
+        <td>{{ category.title }}</td>
+        <td>{{ category.author }}</td>
+        <td>{{ category.description }}</td>
+        <td>{{ category.published_date }}</td>
+
+        <td><a href="{% url 'o_detail' category.id %}">Get</a></td>
+        </tr>
+        {% endfor %}
+        </table>
+        </div>
+
+    </head>
+    <body>

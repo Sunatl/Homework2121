@@ -1,0 +1,97 @@
+/* Style for main body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Style for header (Vakansi section) */
+.a1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.a1 h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Style for navigation links */
+.base {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 530px;
+}
+
+.base a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.base a:hover {
+    color: #b0e57c;
+    font-weight: bold;
+
+}
+
+/* Style for the table in b1 class */
+.b1 {
+    margin: 20px auto;
+    width: 90%;
+    overflow-x: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.b1 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.b1 table caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.b1 th, .b1 td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.b1 th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.b1 td {
+    color: #333;
+}
+
+.b1 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style for links in table */
+.b1 a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.b1 a:hover {
+    color: #317b37;
+    text-decoration: underline;
+}

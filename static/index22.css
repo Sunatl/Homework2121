@@ -1,0 +1,79 @@
+/* Сабкҳои умумии саҳифа */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e0eafc, #f0f2f5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Сарлавҳа */
+h1.a2 {
+    color: #004c99;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Контейнер барои форма */
+.a1 {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Сабкҳои вурудҳо */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+form input:focus {
+    border-color: #004c99;
+    outline: none;
+}
+
+/* Сабкҳои тугмаи "Save" */
+button[type="submit"] {
+    background-color: #28a745; /* Ранги сабз */
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Ранги ториктарини сабз */
+    transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+/* Пайванд */
+.a1 a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    margin-top: 10px;
+}

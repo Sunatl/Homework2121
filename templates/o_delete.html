@@ -1,0 +1,21 @@
+{% extends "o_detail.html" %}
+{% load static %}
+{% block title %}Menu{% endblock title %}
+{% block content %}
+
+<div class="container d-flex justify-content-center align-items-center min-vh-50">
+    <div class="card shadow-lg p-4" style="max-width: 500px; width: 100%;">
+        <h1 class="text-center text-danger mb-4">Нест кардани Book</h1>
+        <p class="text-center">Шумо боварӣ доред, ки <strong>"{{ object.title }}"</strong>-ро нест кардан мехоҳед?</p>
+        
+        <form method="post" class="text-center mt-3">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger me-2">Бале, нест кун</button>
+            <a href="{% url 'o_list' %}" class="btn btn-secondary" style="margin-top: 10px;">Баргаштан</a>
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Log in{% endblock title %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'main1113.css' %}">
+
+<div class="container mt-5">
+    <h1 class="text-primary mb-4">Sing up </h1>
+
+    <div class="card shadow p-4">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="d-flex justify-content-start mt-3">
+                <button type="submit" class="btn btn-success me-2">Sing up</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock content %}

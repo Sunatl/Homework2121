@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'index2.css' %}">
+</head>
+<body>
+
+    <div class="a1">
+        <h1>Product</h1>
+        <div class="base">
+        <!-- <a href="http://127.0.0.1:8000/Rohbar_information"><h3 class="sa">Category</h3></a> -->
+        <a href="{% url 'base' %}"><h3 class="sas">Home</h3></a>
+        <a href="{% url 'p_cr' %}"><h3 class="sas">Add</h3></a>
+    </div>
+    </div>
+
+
+<div class="b1">
+        <table>
+            <caption> <h3>Product</h1> </caption>
+            <tr>
+                <th>User</th>
+                <th>Book</th>
+                <th>Borrow date</th>
+                <th>Detail</th>
+
+            </tr>
+        {% for category in object_list %}
+        <tr>
+        <td>{{ category.user }}</td>
+        <td>{{ category.book }}</td>
+        <td>{{ category.borrow_date }}</td>
+
+        <td><a href="{% url 'p_detail' category.id %}">Get</a></td>
+        </tr>
+        {% endfor %}
+        </table>
+        </div>
+
+    </head>
+    <body>
